@@ -4,9 +4,9 @@ Tests to see if WSGI is working and its basic functionality.
 
 ## Setup
 The environment used to test this code consisted of the following:
-1. Operating System: Ubuntu Server 14.04
-2. Web Server: Apache 2.4.7
-3. WSGI Server/Module: mod_wsgi
+* Operating System: **Ubuntu Server 14.04**
+* Web Server: **Apache 2.4.7**
+* WSGI Server/Module: **mod_wsgi**
 
 To install Apache run this command:
 ```
@@ -42,3 +42,5 @@ was instead:
 Order allow,deny
 Allow from all
 ```
+* Errors in Python scripts will result in "Internal Error" messages from the server.   
+  Check the error logs for more information about the Python errors.
