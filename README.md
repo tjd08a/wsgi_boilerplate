@@ -9,24 +9,24 @@ The environment used to test this code consisted of the following:
 3. WSGI Server/Module: mod_wsgi
 
 To install Apache run this command:
-'''
+```
 sudo apt-get install apache2
-'''
+```
 
 To install mod_wsgi run these commands:
-'''
+```
 sudo apt-get install libapache2-mod-wsgi
 sudo a2enmod mod-wsgi
-'''
+```
 
 # Configuration
 Apache must be properly configured to run mod_wsgi. The directives below must be added to the config file:
-'''
+```
 WSGIScriptAlias /url/ /path-to-scripts/
 <Directory /path-to-scripts>
 Require all granted
 </Directory>
-'''
+```
 
 Notes:
 * **path-to-scripts** is the location on the server where the scripts are stored.
@@ -34,11 +34,11 @@ Notes:
 
 # Troubleshooting
 * In older versions of Apache (2.3 and lower), the directive in place of
-'''
+```
 Require all granted
-'''
+```
 was instead:
-'''
+```
 Order allow,deny
 Allow from all
-'''
+```
