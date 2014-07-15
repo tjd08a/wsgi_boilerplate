@@ -37,10 +37,10 @@ Notes:
 ```
 Require all granted
 ```
-was instead:
+  was instead:
 ```
 Order allow,deny
 Allow from all
 ```
-* Errors in Python scripts will result in "Internal Error" messages from the server.   
+* Errors in Python scripts will result in **Internal Error** messages from the server.   
   Check the error logs for more information about the Python errors.
