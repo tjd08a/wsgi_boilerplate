@@ -19,7 +19,7 @@ sudo apt-get install libapache2-mod-wsgi
 sudo a2enmod mod-wsgi
 ```
 
-# Configuration
+## Configuration
 Apache must be properly configured to run mod_wsgi. The directives below must be added to the config file:
 ```
 WSGIScriptAlias /url/ /path-to-scripts/
@@ -32,7 +32,7 @@ Notes:
 * **path-to-scripts** is the location on the server where the scripts are stored.
 * **url** is the location that an html reference can link to in order to access the script.
 
-# Troubleshooting
+## Troubleshooting
 * In older versions of Apache (2.3 and lower), the directive in place of
 ```
 Require all granted
@@ -44,3 +44,7 @@ Allow from all
 ```
 * Errors in Python scripts will result in **Internal Error** messages from the server.   
   Check the error logs for more information about the Python errors.
+
+## test.wsgi
+A simple wsgi application which will output the keys and values of all inputs from the forms
+submitted to the script. This is used in combination with the test.html page which is also on Github.
